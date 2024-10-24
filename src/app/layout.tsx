@@ -5,10 +5,14 @@ type Props = {
   children: ReactNode
 }
 
-export default function RootLayout({ children }: Props) {
+const RootLayout = (props: Props) => {
+  const { children } = props
+
   return (
     <html lang='en'>
       <body>{children}</body>
     </html>
   )
 }
+
+export default RootLayout
