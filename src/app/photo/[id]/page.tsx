@@ -22,6 +22,7 @@ const Page = async (props: Props) => {
           height={600}
           priority
           className={styles.img}
+          style={{ viewTransitionName: `photo-img-${params.id}` }}
         />
       </div>
       <p>{photo.title}</p>
