@@ -1,1 +1,1 @@
-//
+export { useViewTransitionRouter } from './useViewTransitionRouter'

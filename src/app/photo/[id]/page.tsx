@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { ViewTransitionLink } from '@/components'
 import { getPhoto } from '@/services'
 import styles from './style.module.scss'
 
@@ -21,13 +21,14 @@ const Page = async (props: Props) => {
           width={600}
           height={600}
           priority
-          style={{ objectFit: 'contain' }}
+          className={styles.img}
         />
       </div>
       <p>{photo.title}</p>
-      <Link href='/' className={styles.link}>
+
+      <ViewTransitionLink href='/' className={styles.link}>
         戻る
-      </Link>
+      </ViewTransitionLink>
     </div>
   )
 }

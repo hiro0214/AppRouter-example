@@ -12,6 +12,11 @@
   background: #aaa;
 }
 
+.img {
+  object-fit: contain;
+  view-transition-name: photo-img;
+}
+
 .link {
   display: block;
   width: 150px;
